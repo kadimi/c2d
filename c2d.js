@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 
     'use strict';
 
-    $("[class^='c2d_'],div[class*=' c2d_']").each(function () {
+    $("[class^='c2d_'], div[class*=' c2d_']").each(function () {
 
         var c2d, c2d_array = [], declaration;
         var classes = $(this).attr('class');
