@@ -15,9 +15,9 @@ jQuery(document).ready(function ($) {
         for (var i = 0; i < c2d_array.length; i++) {
             c2d = c2d_array[i];
             declaration = /\bc2d_(.+)_(.+)\b/.exec(c2d);
-            declaration['property'] = declaration[1];
-            declaration['value'] = declaration[2];
-            $(this).css(declaration['property'], declaration['value']);
-        };
+            declaration.property = declaration[1];
+            declaration.value = declaration[2];
+            $(this).css(declaration.property, declaration.value);
+        }
     });
 });
