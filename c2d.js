@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
 
         var c2d, c2d_array = [], declaration;
         var classes = $(this).attr('class');
-        var c2d_regex = /\bc2d_[a-zA-Z0-9_]+_[a-zA-Z0-9_]+\b/g;
+        var c2d_regex = /\bc2d_[a-zA-Z0-9_]+_[a-zA-Z0-9_]+\b/gi;
         
         while( c2d = c2d_regex.exec(classes) ){
             c2d_array.push(c2d[0]);
